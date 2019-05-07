@@ -1,2 +1,2 @@
-# ReactProofpointLinkDecoder
-A basic react web app to easily decode proofpoint links
+# NodeProofpointLinkDecoder
+A basic Node web app to easily decode proofpoint links
