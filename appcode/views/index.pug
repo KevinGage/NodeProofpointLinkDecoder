@@ -1,0 +1,8 @@
+extends boilerplate
+
+block content
+  form.form-horizonal.justify-content-center(action='/', method='post')
+    .form-group
+      label Paste Encoded URL
+      input.form-control(type='text', name='encoded')
+      button.btn.btn-primary(type='submit') Decode
