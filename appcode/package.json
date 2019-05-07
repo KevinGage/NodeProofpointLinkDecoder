@@ -1,0 +1,25 @@
+{
+  "name": "proofpoint_link_decoder",
+  "version": "1.0.0",
+  "description": "Simple browser interface for the proofpoint python link decoder",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinGage/NodeProofpointLinkDecoder.git"
+  },
+  "author": "Kevin Gage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinGage/NodeProofpointLinkDecoder/issues"
+  },
+  "homepage": "https://github.com/KevinGage/NodeProofpointLinkDecoder#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0"
+  }
+}
