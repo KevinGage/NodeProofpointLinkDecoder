@@ -2,9 +2,14 @@
 
 const { exec } = require('child_process');
 
+function cleanseInput(input) {
+  input = input.split(" ")[0];
+  return '"'+input+'"';
+}
+
 exports.decode = function(encodedUrl, cb) {
   try{
-    exec(__dirname + '/../bin/URLDefenceDecode.py '+ encodedUrl, (err, stdout, stderr) => { 
+    exec(__dirname + '/../bin/URLDefenceDecode.py '+ cleanseInput(encodedUrl), (err, stdout, stderr) => { 
       if (err) {
         // logger.error('Error launching nmap scanner');
         // logger.error(err);
