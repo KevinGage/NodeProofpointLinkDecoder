@@ -1,8 +1,21 @@
 extends boilerplate
 
+block boilerplateheader
+  script(type='text/javascript', charset='utf8', src='js/index.js')
+  link(rel='stylesheet', type='text/css', href='css/index.css')
+
 block content
-  form.form-horizonal.justify-content-center(action='/', method='post')
-    .form-group
-      label Paste Encoded URL
-      input.form-control(type='text', name='encoded')
-      button.btn.btn-primary(type='submit') Decode
+  .vertical-center
+    .container
+      .row
+        .col-sm.text-center
+          .form-horizontal
+            .form-group.form-inline.justify-content-center
+              label Paste Encoded URL:
+              input.form-control(type='text', id='encoded')
+      .row
+        .col.text-center
+          button.btn.btn-primary(onClick=("DecodeUrl(document.getElementById('encoded').value)")) Decode
+      .row
+        .col-sm.text-center
+          label(id='output')
