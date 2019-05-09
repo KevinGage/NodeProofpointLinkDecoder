@@ -8,8 +8,7 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function(req,res) {
-  let encodedURL = JSON.stringify(req.body.encoded);
-  decoder.decode(encodedURL, function(err, decoded) {
+  decoder.decode(req.body.encoded, function(err, decoded) {
     if (!err) {
       res.status(200).send(decoded);
     } else {
