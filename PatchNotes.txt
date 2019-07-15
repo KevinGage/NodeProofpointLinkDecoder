@@ -1,1 +1,2 @@
+0.2: Updated dependencies to fix security vuln in lodash
 0.1: Initial Beta
