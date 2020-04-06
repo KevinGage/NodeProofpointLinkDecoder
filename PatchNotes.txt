@@ -1,2 +1,3 @@
+0.3: Updated dependencies to fix security vuln in acorn and kind-of
 0.2: Updated dependencies to fix security vuln in lodash
 0.1: Initial Beta
